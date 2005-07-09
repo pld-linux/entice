@@ -2,20 +2,20 @@ Summary:	Image viewer using Enlightenment libraries
 Summary(pl):	Przegl±darka obrazków u¿ywaj±ca bibliotek Enlightenmenta
 Name:		entice
 Version:	0.9.1
-%define _snap	20050105
+%define _snap	20050701
 Release:	0.%{_snap}.0.1
 License:	BSD
 Group:		X11/Window Managers/Tools
 #Source0:	http://dl.sourceforge.net/enlightenment/%{name}-%{version}.tar.gz
-Source0:	ftp://ftp.sparky.homelinux.org/pub/e17/%{name}-%{version}-%{_snap}.tar.gz
-# Source0-md5:	44b576acbe2327b22bb9b06bb8c70327
+Source0:	ftp://ftp.sparky.homelinux.org/snaps/enli/e17/apps/%{name}-%{_snap}.tar.gz
+# Source0-md5:	3b1d9e40558ebc803efc7b2fd9e7df42
+Patch0:		%{name}-no_buildtime_gimp.patch
 URL:		http://enlightenment.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	esmart-devel
-BuildRequires:	/usr/bin/gimp-remote-2.2
 BuildRequires:	libtool
-Requires:	/usr/bin/gimp-remote-2.2
+Requires:	/usr/bin/gimp-remote
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,12 +37,11 @@ z tego katalogu.
 
 %prep
 %setup -q -n %{name}
-sed 's/gimp-remote-2.0/gimp-remote-2.2/' \
-	-i configure.in
+%patch0 -p1
 
 %build
 %{__libtoolize}
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
