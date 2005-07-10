@@ -7,7 +7,7 @@ Release:	0.%{_snap}.0.1
 License:	BSD
 Group:		X11/Window Managers/Tools
 #Source0:	http://dl.sourceforge.net/enlightenment/%{name}-%{version}.tar.gz
-Source0:	ftp://ftp.sparky.homelinux.org/snaps/enli/e17/apps/%{name}-%{_snap}.tar.gz
+Source0:	http://sparky.homelinux.org/snaps/enli/e17/apps/%{name}-%{_snap}.tar.gz
 # Source0-md5:	3b1d9e40558ebc803efc7b2fd9e7df42
 Patch0:		%{name}-no_buildtime_gimp.patch
 URL:		http://enlightenment.org/
