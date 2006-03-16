@@ -2,11 +2,13 @@ Summary:	Image viewer using Enlightenment libraries
 Summary(pl):	Przegl±darka obrazków u¿ywaj±ca bibliotek Enlightenmenta
 Name:		entice
 Version:	0.9.3.004
-Release:	1
+%define	_snap	20060307
+Release:	0.%{_snap}.1
 License:	BSD
 Group:		X11/Window Managers/Tools
-Source0:	http://enlightenment.freedesktop.org/files/%{name}-%{version}.tar.gz
-# Source0-md5:	c5ffa01f6327b59b4fbbb3729e1e0867
+#Source0:	http://enlightenment.freedesktop.org/files/%{name}-%{version}.tar.gz
+Source0:	http://sparky.homelinux.org/snaps/enli/e17/apps/%{name}-%{_snap}.tar.bz2
+# Source0-md5:	8d1997eaeacc677bc76756b786896b84
 Patch0:		%{name}-no_buildtime_gimp.patch
 URL:		http://enlightenment.org/
 BuildRequires:	autoconf
@@ -34,12 +36,12 @@ jako pojedynczy argument - wtedy przegl±darka wczyta wszystkie obrazki
 z tego katalogu.
 
 %prep
-%setup -q
+%setup -q -n %{name}
 %patch0 -p1
 
 %build
 %{__libtoolize}
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
