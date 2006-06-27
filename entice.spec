@@ -2,13 +2,13 @@ Summary:	Image viewer using Enlightenment libraries
 Summary(pl):	Przegl±darka obrazków u¿ywaj±ca bibliotek Enlightenmenta
 Name:		entice
 Version:	0.9.3.004
-%define	_snap	20060307
+%define	_snap	20060421
 Release:	0.%{_snap}.1
 License:	BSD
 Group:		X11/Window Managers/Tools
 #Source0:	http://enlightenment.freedesktop.org/files/%{name}-%{version}.tar.gz
 Source0:	http://sparky.homelinux.org/snaps/enli/e17/apps/%{name}-%{_snap}.tar.bz2
-# Source0-md5:	8d1997eaeacc677bc76756b786896b84
+# Source0-md5:	f0fbbb668bd11d0e74d53cbef7e191af
 Patch0:		%{name}-no_buildtime_gimp.patch
 URL:		http://enlightenment.org/
 BuildRequires:	autoconf
