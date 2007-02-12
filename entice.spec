@@ -1,5 +1,5 @@
 Summary:	Image viewer using Enlightenment libraries
-Summary(pl):	Przegl±darka obrazków u¿ywaj±ca bibliotek Enlightenmenta
+Summary(pl.UTF-8):   PrzeglÄ…darka obrazkÃ³w uÅ¼ywajÄ…ca bibliotek Enlightenmenta
 Name:		entice
 Version:	0.9.3.004
 %define	_snap	20060421
@@ -26,13 +26,13 @@ from the working directory (currently it even tries files that aren't
 images). You can instead give a directory name as a single argument,
 and it will load all images from this directory.
 
-%description -l pl
-Entice to przegl±darka obrazków u¿ywaj±ca bibliotek Enlightenmenta.
-Entice aktualnie nie pobiera ¿adnych opcji z linii poleceñ, przyjmuje
-tylko listê obrazków do wczytania jako parametry. Uruchomiona bez
-parametrów próbuje wczytaæ wszystkie pliki z bie¿±cego katalogu (w tej
-chwili nawet te, które nie s± obrazkami). Mo¿na podaæ nazwê katalogu
-jako pojedynczy argument - wtedy przegl±darka wczyta wszystkie obrazki
+%description -l pl.UTF-8
+Entice to przeglÄ…darka obrazkÃ³w uÅ¼ywajÄ…ca bibliotek Enlightenmenta.
+Entice aktualnie nie pobiera Å¼adnych opcji z linii poleceÅ„, przyjmuje
+tylko listÄ™ obrazkÃ³w do wczytania jako parametry. Uruchomiona bez
+parametrÃ³w prÃ³buje wczytaÄ‡ wszystkie pliki z bieÅ¼Ä…cego katalogu (w tej
+chwili nawet te, ktÃ³re nie sÄ… obrazkami). MoÅ¼na podaÄ‡ nazwÄ™ katalogu
+jako pojedynczy argument - wtedy przeglÄ…darka wczyta wszystkie obrazki
 z tego katalogu.
 
 %prep
