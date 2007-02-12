@@ -1,5 +1,5 @@
 Summary:	Image viewer using Enlightenment libraries
-Summary(pl.UTF-8):   Przeglądarka obrazków używająca bibliotek Enlightenmenta
+Summary(pl.UTF-8):	Przeglądarka obrazków używająca bibliotek Enlightenmenta
 Name:		entice
 Version:	0.9.3.004
 %define	_snap	20060421
